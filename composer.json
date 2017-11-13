@@ -1,0 +1,23 @@
+{
+    "name": "niklas/budimir_4ai_webtue",
+    "description": "some movies",
+    "type": "project",
+    "license": "gpl",
+    "authors": [
+        {
+            "name": "Niklas.Budimir",
+            "email": "4124@htl.rennweg.at"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/Weissheiten/htl3r.kungfumovies"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/endroid/QrCode"
+        }
+    ],
+    "require": {}
+}

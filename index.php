@@ -12,10 +12,6 @@ use HTL3R\KungFuMovies\Filmausgabe;
 
 $film1 = new Filmausgabe("Bruce Lee - Der Mann mit der Todeskralle", 5, "https://www.youtube.com/watch?v=80wXmIcyZwk");
 
-
-
-
-
 echo "<!DOCTYPE html>";
 echo "<html lang="en">";
 echo "<head>";

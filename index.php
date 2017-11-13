@@ -8,26 +8,25 @@
 
 require "vendor/autoload.php";
 
-use HTL3R\KungFuMovies;
+use HTL3R\KungFuMovies\Filmausgabe;
 
-$film1 = new KungFuMovies\Filmausgabe("Bruce Lee - Der Mann mit der Todeskralle", 5, "https://www.youtube.com/watch?v=80wXmIcyZwk");
-
-
+$film1 = new Filmausgabe("Bruce Lee - Der Mann mit der Todeskralle", 5, "https://www.youtube.com/watch?v=80wXmIcyZwk");
 
 
 
-/*
- * <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-    <h1>Album DB</h1>
-    <h3>{album1}</h3>
 
-</body>
-</html>
- */
+echo "<!DOCTYPE html>";
+echo "<html lang="en">";
+echo "<head>";
+echo "<meta charset=\"UTF-8\">";
+echo "<title>Title</title>";
+echo "</head>";
+echo "<body>";
+
+    echo "<h1>Der Mann mit der Todeskralle</h1>";
+    echo "<a href=".$film1.getMovieInfoAsJSON().">Filminfo als JSON</a>";
+    echo "<a href=".$film1.getMovieQRCodeForBrowser().">Filminfo als QR-Code</a>";
+
+echo "</body>";
+echo "</html>";
